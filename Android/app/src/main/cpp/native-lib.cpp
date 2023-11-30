@@ -13,8 +13,5 @@ Java_com_demensdeum_body_check_app_MainActivity_bodyStatus(
 
     auto result = bodyStatus();
 
-    //std::string hello = "Hello from Twitch2";
-    //return env->NewStringUTF(hello.c_str());
-
     return env->NewStringUTF(result);
 }

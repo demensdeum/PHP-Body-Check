@@ -16,6 +16,17 @@ class MainActivity : AppCompatActivity() {
     private var height: Int = 1;
 
     private fun calculateBodyStatus() {
+
+        var weightText = binding.weight.text.toString()
+        var heightText = binding.height.text.toString()
+
+        if (
+            weightText.toIntOrNull() == null ||
+            heightText.toIntOrNull() == null
+            )
+        {
+            return
+        }
         if (weight < 1 || height < 1) {
             return
         }
