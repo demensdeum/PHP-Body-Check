@@ -33,6 +33,14 @@ static int Output_Consumer(const void *pOutput, unsigned int nOutputLen, void *p
     return PH7_OK;
 }
 
+const char *bodyStatus(
+        int height,
+        int weight
+        )
+{
+    return "FAT";
+}
+
 
 int main(void)
 {

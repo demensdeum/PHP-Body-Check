@@ -2,9 +2,9 @@
 // Created by Demensdeum on 30.11.2023.
 //
 
-#ifndef PHP_BODY_CHECK_APP_H
-#define PHP_BODY_CHECK_APP_H
+#pragma once
 
-int main(void);
-
-#endif //MY_APPLICATION_MAIN_H
+extern "C" {
+    int main(void);
+    char *bodyStatus();
+}

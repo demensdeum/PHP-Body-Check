@@ -5,12 +5,14 @@
 #include "main.h"
 
 extern "C" JNIEXPORT jstring JNICALL
-Java_com_demensdeum_body_check_app_MainActivity_stringFromJNI(
+Java_com_demensdeum_body_check_app_MainActivity_bodyStatus(
         JNIEnv* env,
         jobject ) {
 
-    main();
+    auto result = bodyStatus();
 
-    std::string hello = "Hello from Twitch2";
-    return env->NewStringUTF(hello.c_str());
+    //std::string hello = "Hello from Twitch2";
+    //return env->NewStringUTF(hello.c_str());
+
+    return env->NewStringUTF(result);
 }
