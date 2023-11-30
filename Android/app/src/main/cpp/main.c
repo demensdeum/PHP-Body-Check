@@ -17,7 +17,6 @@ static void Fatal(const char *zMsg)
     exit(0);
 }
 
-
 static int Output_Consumer(const void *pOutput, unsigned int nOutputLen, void *pUserData /* Unused */)
 {
     char *result = (char *)malloc((nOutputLen + 1) * sizeof(char));
