@@ -5,5 +5,5 @@
 #pragma once
 
 extern "C" {
-    char *bodyStatus();
+    char *bodyStatus(int height, int weight);
 }

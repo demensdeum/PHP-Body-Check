@@ -9,9 +9,9 @@ Java_com_demensdeum_body_check_app_MainActivity_bodyStatus(
         JNIEnv* env,
         jobject ,
         jint height,
-        jint width) {
+        jint weight) {
 
-    auto result = bodyStatus();
+    auto result = bodyStatus(height, weight);
 
     return env->NewStringUTF(result);
 }
