@@ -7,7 +7,9 @@
 extern "C" JNIEXPORT jstring JNICALL
 Java_com_demensdeum_body_check_app_MainActivity_bodyStatus(
         JNIEnv* env,
-        jobject ) {
+        jobject ,
+        jint height,
+        jint width) {
 
     auto result = bodyStatus();
 
