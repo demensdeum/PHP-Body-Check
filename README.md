@@ -2,10 +2,10 @@
 Crossplatform application to get information about your body (PHP)  
   
 ## Android  
-![ScreenshotAndroid.png](ScreenshotAndroid.png)  
+![Screenshot_Android.png](Screenshot_Android.png)  
+
+## iOS
+![Screenshot_iOS.png](Screenshot_iOS.png)  
   
 Main app BMI calculation implemented in PHP by PH7 Engine.  
 https://github.com/symisc/PH7  
-
-## iOS  
-Coming soon  

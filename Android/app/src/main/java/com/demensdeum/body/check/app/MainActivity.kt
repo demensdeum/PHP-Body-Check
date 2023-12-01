@@ -81,10 +81,6 @@ class MainActivity : AppCompatActivity() {
                 Log.v("VerboseTag", "Height After Text Changed: $s")
             }
         })
-
-//        var weight = binding.weight.text.toString().toInt();
-//        var height = binding.height.text.toString().toInt();
-//        binding.bodyState.text = bodyStatus(height, weight);
     }
 
     /**

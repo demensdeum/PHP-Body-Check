@@ -23,9 +23,6 @@ echo \"Ожирение III степени\";\
 #include <stdlib.h>
 #include "ph7.h"
 
-#include <android/log.h>
-#define LOGV(TAG, message) __android_log_print(ANDROID_LOG_VERBOSE, TAG, "%s", message)
-
 char *result = NULL;
 
 static void Fatal(const char *zMsg)
@@ -47,8 +44,6 @@ static int Output_Consumer(const void *pOutput, unsigned int nOutputLen, void *p
     }
 
     sprintf(result, "%.*s", nOutputLen, (const char *)pOutput);
-
-    LOGV("PHP RESULT:", result);
 
     return PH7_OK;
 }
